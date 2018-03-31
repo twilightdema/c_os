@@ -4,9 +4,9 @@
 ```
 sudo apt-get install install nasm
 sudo apt-get install qemu
-sudo apt-get install libgmp-dev
-sudo apt-get install libmpfr-dev
-sudo apt-get install libmpc-dev
+sudo apt-get install libgmp3-dev
+sudo apt-get install libmpfr-dev libmpfr-doc libmpfr4 libmpfr4-dbg
+sudo apt-get install mpc libmpc-dev
 sudo apt-get install gcc
 ```
 
