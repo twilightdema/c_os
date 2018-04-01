@@ -38,8 +38,16 @@ make install-gcc
 make install-target-libgcc 
 ```
 
-Always use /usr/local/bin/nasm to assembly all .asm files.
-To start testing the OS, use: qemu-system-x86_64 boot_loader.
+To build OS kernel:
+```
+cd src/bootloader
+nasm -f bin boot32_kernel.asm -o boot32_kernel.bin
+```
+
+To run the OS in qemu:
+```
+qemu-system-x86_64 boot32_kernel.bin
+```
 
 
 ### Installation for OSX ###
@@ -82,6 +90,14 @@ make install-gcc
 make install-target-libgcc 
 ```
 
-Always use /usr/local/bin/nasm to assembly all .asm files.
-To start testing the OS, use: qemu-system-x86_64 boot_loader.
+To build OS kernel:
+```
+cd src/bootloader
+/usr/local/bin/nasm -f bin boot32_kernel.asm -o boot32_kernel.bin
+```
+
+To run the OS in qemu:
+```
+qemu-system-x86_64 boot32_kernel.bin
+```
 
